@@ -13,6 +13,7 @@ module.exports = {
     mode: 'development',
     module: {
         rules: [
+            ...base.module.rules,
             {
                 test: /\.css$/, //$的意思是以css结尾，\.的意思是转译
                 // 下面的use 使用 JS 生成 style

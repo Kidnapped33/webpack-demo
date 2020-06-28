@@ -18,6 +18,7 @@ module.exports = {
     ],
     module: {
         rules: [
+            ...base.module.rules,
             {
                 test: /\.css$/, //$的意思是以css结尾，\.的意思是转译
                 // 下面的use把 CSS 抽成文件
